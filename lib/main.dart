@@ -18,3 +18,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class MyInfoRow extends StatelessWidget {
+  const MyInfoRow({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
