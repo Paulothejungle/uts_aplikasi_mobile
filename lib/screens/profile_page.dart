@@ -90,9 +90,8 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
     );
   }
-}
 
-Widget _buildProfileContent() {
+  Widget _buildProfileContent() {
   return SingleChildScrollView(
     child: Padding(
       padding: const EdgeInsets.all(20),
@@ -173,3 +172,5 @@ Widget _buildProfileContent() {
     ),
   );
 }
+}
+
