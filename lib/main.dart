@@ -38,6 +38,10 @@ class MyInfoRow extends StatelessWidget {
               children: [
                 SizedBox(height: 20),
 
+                // Avatar profile
+                CircleAvatar(
+                  radius: 55,
+                )
               ],
             )
         ),
