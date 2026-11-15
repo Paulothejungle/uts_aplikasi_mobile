@@ -200,6 +200,19 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 ),
               ),
 
+              const SizedBox(height: 15),
+
+              // Lokasi
+              TextFormField(
+                controller: lokasiController,
+                decoration: const InputDecoration(
+                  labelText: 'Lokasi',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+
+              const SizedBox(height: 15),
+
               
             ]
           )
