@@ -51,7 +51,7 @@ class MyInfoRow extends StatelessWidget {
 
                 SizedBox(height: 8),
 
-                // my full name
+                // My full name
                 Text(
                   'Rival Hermawan',
                   style: TextStyle(
@@ -62,12 +62,18 @@ class MyInfoRow extends StatelessWidget {
 
                 SizedBox(height: 8),
 
-                // student identity 
+                // Student identity 
                 Text('NIM: 1124160127'),
                 Text('Software Engineering'),
                 Text('Kelas: TI 24 SE M'),
 
-                SizedBox(height: 12),  
+                SizedBox(height: 12),
+
+                // Bio
+                Text(
+                  'Mahasiswa Software Engineering yang tertarik dengan dunia pemrograman',
+                  textAlign: TextAlign.center,
+                ), 
               ],
             )
         ),
