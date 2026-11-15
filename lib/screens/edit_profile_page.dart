@@ -88,7 +88,19 @@ class _EditProfilePageState extends State<EditProfilePage> {
           key: _formKey,
           child: Column(
             children:[
-              
+              TextFormField(
+                controller: namaController,
+                decoration: const InputDecoration(
+                  labelText: 'Nama Lengkap',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value){
+                  if (value == null || value.trim().isEmpty) {
+                    return 'Nama Wajib Diisi';
+                  }
+                  return null;
+                }
+              )
             ]
           )
         )
