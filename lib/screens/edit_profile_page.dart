@@ -112,7 +112,18 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 ),
               ),
 
-              
+              const SizedBox(height: 15),
+
+              TextFormField(
+                controller: kelasController,
+                decoration: const InputDecoration(
+                  labelText: 'Kelas',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+
+              const SizedBox(height: 15),
+
             ]
           )
         )
