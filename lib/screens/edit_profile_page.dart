@@ -88,6 +88,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
           key: _formKey,
           child: Column(
             children:[
+              // full name
               TextFormField(
                 controller: namaController,
                 decoration: const InputDecoration(
@@ -104,6 +105,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
               const SizedBox(height: 15),
 
+              // NIM  
               TextFormField(
                 controller: nimController,
                 decoration: const InputDecoration(
@@ -114,6 +116,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
               const SizedBox(height: 15),
 
+              // Prodi  
               TextFormField(
                 controller: prodiController,
                 decoration: const InputDecoration(
@@ -124,6 +127,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
               const SizedBox(height: 15),
 
+              // Kelas  
               TextFormField(
                 controller: kelasController,
                 decoration: const InputDecoration(
@@ -134,6 +138,20 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
               const SizedBox(height: 15),
 
+              // Bio
+              TextFormField(
+                controller: bioController,
+                decoration: const InputDecoration(
+                  labelText: 'Bio',
+                  border: OutlineInputBorder(),
+                ),
+                maxLines: 3,
+              ),
+
+              const SizedBox(height: 15),
+
+              
+              
             ]
           )
         )
