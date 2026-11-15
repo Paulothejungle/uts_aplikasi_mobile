@@ -97,6 +97,12 @@ class MyInfoRow extends StatelessWidget {
                         title: Text('Github'),
                         subtitle: Text('https://github.com/Paulothejungle'),
                       ),
+
+                      ListTile(
+                        leading: Icon(Icons.location_on),
+                        title: Text('Locatioon'),
+                        subtitle: Text('Tangerang'),
+                      ),
                     ]
                   )
                 ) 
