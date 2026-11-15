@@ -86,7 +86,11 @@ class MyInfoRow extends StatelessWidget {
                         subtitle: Text('rivalhermawan47@gmail.com'),
                       ),
 
-                      
+                      ListTile(
+                        leading: Icon(Icons.phone),
+                        title: Text('Phone'),
+                        subtitle: Text('085773810843'),
+                      )
                     ]
                   )
                 ) 
