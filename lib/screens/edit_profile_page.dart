@@ -40,4 +40,19 @@ class _EditProfilePageState extends State<EditProfilePage> {
     githubController = TextEditingController(text: widget.profile.github);
     lokasiController = TextEditingController(text: widget.profile.lokasi);
   }
+
+  @override
+  void dispose() {
+    namaController.dispose();
+    nimController.dispose();
+    prodiController.dispose();
+    kelasController.dispose();
+    bioController.dispose();
+    emailController.dispose();
+    phoneController.dispose();
+    githubController.dispose();
+    lokasiController.dispose();
+
+    super.dispose();
+  }
 }
