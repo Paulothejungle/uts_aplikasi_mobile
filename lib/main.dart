@@ -78,7 +78,17 @@ class MyInfoRow extends StatelessWidget {
                 SizedBox(height: 20),
 
                 Card(
-                  
+                  child: Column(
+                    children: [
+                      ListTile(
+                        leading: Icon(Icons.email),
+                        title: Text('Email'),
+                        subtitle: Text('rivalhermawan47@gmail.com'),
+                      ),
+
+                      
+                    ]
+                  )
                 ) 
               ],
             )
