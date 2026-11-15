@@ -72,7 +72,22 @@ class _ProfilePageState extends State<ProfilePage> {
           _buildProfileContent(),
           const AboutPage(),
         ],
-      )
+      ),
+
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        items: const[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profil',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: 'Tentang', 
+          ),
+        ],
+      ),
     );
   }
 }
