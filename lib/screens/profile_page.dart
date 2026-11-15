@@ -131,6 +131,16 @@ class _ProfilePageState extends State<ProfilePage> {
                 Navigator.pop(context);
               },
             ),
+            ListTile(
+              leading: Icon(Icons.info),
+              title: Text('Tentang Saya'),
+              onTap: () {
+                setState((){
+                  _selectedIndex = 1;
+                });
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),
