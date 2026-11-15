@@ -90,7 +90,16 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
 
       drawer: Drawer(
-        
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+            )
+          ]
+        )
       )
     );
   }
