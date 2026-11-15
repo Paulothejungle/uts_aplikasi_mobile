@@ -70,7 +70,14 @@ class _ProfilePageState extends State<ProfilePage> {
                   });
                 }
               },
-            )
+            ),
+             IconButton(
+              icon: Icon(
+                widget.isDarkMode ? Icons.light_mode : Icons.dark_mode,
+              ),
+              onPressed: widget.onThemeChanged,
+              tooltip: 'Ganti Tema',
+            ),
         ],
       ),
       body: IndexedStack(

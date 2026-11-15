@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
 
       themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
 
-      home: const ProfilePage(
+      home: ProfilePage(
         isDarkMode: isDarkMode,
         onThemeChanged: toggleTheme,
       ),
