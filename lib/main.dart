@@ -32,7 +32,15 @@ class MyInfoRow extends StatelessWidget {
         centerTitle: true,
       ),
       body: const SingleChildScrollView(
-        
+        child: Padding(
+          padding: EdgeInsets.all(20),
+            child: Column(
+              children: [
+                SizedBox(height: 20),
+
+              ],
+            )
+        ),
       )
     );
   }
