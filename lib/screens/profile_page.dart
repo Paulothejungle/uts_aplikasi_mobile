@@ -105,13 +105,26 @@ class _ProfilePageState extends State<ProfilePage> {
                     radius: 30,
                     child: Icon(Icons.person, size: 35),
                   ),
-                  
+                  SizedBox(height: 10),
+                  Text(
+                    profile.nama,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    profile.prodi,
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ],
-              )
-            )
-          ]
-        )
-      )
+              ),
+            ),
+            
+          ],
+        ),
+      ),
     );
   }
 
