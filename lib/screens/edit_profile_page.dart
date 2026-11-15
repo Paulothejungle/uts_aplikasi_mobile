@@ -150,7 +150,25 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
               const SizedBox(height: 15),
 
-              
+              // Email
+              TextFormField(
+                controller: emailController,
+                keyboardType: TextInputType.emailAddress,
+                decoration: const InputDecoration(
+                  labelText: 'Email',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value) {
+                  if (value == null || 
+                  !RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$')
+                  .hasMatch(value.trim())) {
+                    return 'Email tidak valid';
+                  }
+                  return null;
+                },
+              ),
+
+              const SizedBox(height: 15),
               
             ]
           )
