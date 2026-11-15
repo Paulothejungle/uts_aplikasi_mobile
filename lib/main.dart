@@ -59,8 +59,15 @@ class MyInfoRow extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ), 
                 ),
-                
-                  
+
+                SizedBox(height: 8),
+
+                // student identity 
+                Text('NIM: 1124160127'),
+                Text('Software Engineering'),
+                Text('Kelas: TI 24 SE M'),
+
+                SizedBox(height: 12),  
               ],
             )
         ),
