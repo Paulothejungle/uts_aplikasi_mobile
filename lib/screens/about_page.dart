@@ -23,9 +23,42 @@ class AboutPage extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-        ],
 
-        
+          const SizedBox(height: 15),
+
+          const Text(
+            'Rival Hermawan',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+
+          const SizedBox(height: 25),
+
+          const Text(
+            'Hobi dan Minat',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+
+          const SizedBox(height: 10),
+
+          Card(
+            child: Column(
+              children: const [
+                ListTile(
+                  leading: Icon(Icons.sports_esports),
+                  title: Text('Bermain Game'),
+                  subtitle: Text('Hobi'),
+                ),
+              ]
+            )
+          )
+        ],
       ),
     );
   }
