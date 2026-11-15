@@ -4,6 +4,18 @@ import "../models/profile.dart";
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
+  final Profile profile = Profile(
+    nama: 'Rival Hermawan',
+    nim: '1124160127',
+    prodi: 'Software Engineering',
+    kelas: 'TI 24 SE M',
+    bio: 'Mahasiswa Software Engineering yang tertarik dengan dunia pemrograman',
+    email: 'rivalhermawan47@gmail.com',
+    phone: '085773810843',
+    github: 'https://github.com/Paulothejungle',
+    lokasi: 'Tangerang',
+  );
+
   @override
   State<ProfilePage> createState()=> _ProfilePageState();
 }
