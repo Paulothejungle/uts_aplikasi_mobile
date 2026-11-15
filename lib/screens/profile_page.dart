@@ -4,23 +4,23 @@ import "../models/profile.dart";
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
-  final Profile profile = Profile(
-    nama: 'Rival Hermawan',
-    nim: '1124160127',
-    prodi: 'Software Engineering',
-    kelas: 'TI 24 SE M',
-    bio: 'Mahasiswa Software Engineering yang tertarik dengan dunia pemrograman',
-    email: 'rivalhermawan47@gmail.com',
-    phone: '085773810843',
-    github: 'https://github.com/Paulothejungle',
-    lokasi: 'Tangerang',
-  );
-
   @override
   State<ProfilePage> createState()=> _ProfilePageState();
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+
+  final Profile profile = Profile(
+    nama  : 'Rival Hermawan',
+    nim   : '1124160127',
+    prodi : 'Software Engineering',
+    kelas : 'TI 24 SE M',
+    bio   : 'Mahasiswa Software Engineering yang tertarik dengan dunia pemrograman',
+    email : 'rivalhermawan47@gmail.com',
+    phone : '085773810843',
+    github: 'https://github.com/Paulothejungle',
+    lokasi: 'Tangerang',
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class _ProfilePageState extends State<ProfilePage> {
         title: const Text('Profil Saya'),
         centerTitle: true,
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),
             child: Column(
@@ -51,7 +51,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
                 // My full name
                 Text(
-                  'Rival Hermawan',
+                  profile.nama,
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 SizedBox(height: 8),
 
                 // Student identity 
-                Text('NIM: 1124160127'),
+                Text('NIM: ${profile.nim}'),
                 Text('Software Engineering'),
                 Text('Kelas: TI 24 SE M'),
 
