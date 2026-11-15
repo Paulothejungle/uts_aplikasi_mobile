@@ -42,7 +42,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_selectedIndex == 0 ? 'profil saya' : 'Tentang saya',),
+        title: Text(_selectedIndex == 0 ? 'Profil saya' : 'Tentang saya',),
         centerTitle: true,
         actions: [
           if (_selectedIndex == 0)
@@ -88,6 +88,10 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ],
       ),
+
+      drawer: Drawer(
+        
+      )
     );
   }
 
@@ -99,75 +103,75 @@ class _ProfilePageState extends State<ProfilePage> {
         children: [
           SizedBox(height: 20),
 
-                // Avatar profile
-                CircleAvatar(
-                  radius: 55,
-                  backgroundColor: Colors.lightBlueAccent,
-                  child: Icon(
-                    Icons.person,
-                    size: 60,
-                    color: Colors.white,
-                  ),
+          // Avatar profile
+          CircleAvatar(
+            radius: 55,
+            backgroundColor: Colors.lightBlueAccent,
+            child: Icon(
+              Icons.person,
+              size: 60,
+              color: Colors.white,
+            ),
+          ),
+
+          SizedBox(height: 8),
+
+          // My full name
+          Text(
+            profile.nama,
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+            ), 
+          ),
+
+          SizedBox(height: 8),
+
+          // Student identity 
+          Text('NIM: ${profile.nim}'),
+          Text(profile.prodi),
+          Text('Kelas: ${profile.kelas}'),
+
+          SizedBox(height: 12),
+
+          // Bio
+          Text(
+            profile.bio,
+            textAlign: TextAlign.center,
+          ),
+
+          SizedBox(height: 20),
+
+          Card(
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.email),
+                  title: Text('Email'),
+                  subtitle: Text(profile.email),
                 ),
 
-                SizedBox(height: 8),
-
-                // My full name
-                Text(
-                  profile.nama,
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ), 
+                ListTile(
+                  leading: Icon(Icons.phone),
+                  title: Text('Phone'),
+                  subtitle: Text(profile.phone),
                 ),
 
-                SizedBox(height: 8),
-
-                // Student identity 
-                Text('NIM: ${profile.nim}'),
-                Text(profile.prodi),
-                Text('Kelas: ${profile.kelas}'),
-
-                SizedBox(height: 12),
-
-                // Bio
-                Text(
-                  profile.bio,
-                  textAlign: TextAlign.center,
+                ListTile(
+                  leading: Icon(Icons.code),
+                  title: Text('Github'),
+                  subtitle: Text(profile.github),
                 ),
 
-                SizedBox(height: 20),
-
-                Card(
-                  child: Column(
-                    children: [
-                      ListTile(
-                        leading: Icon(Icons.email),
-                        title: Text('Email'),
-                        subtitle: Text(profile.email),
-                      ),
-
-                      ListTile(
-                        leading: Icon(Icons.phone),
-                        title: Text('Phone'),
-                        subtitle: Text(profile.phone),
-                      ),
-
-                      ListTile(
-                        leading: Icon(Icons.code),
-                        title: Text('Github'),
-                        subtitle: Text(profile.github),
-                      ),
-
-                      ListTile(
-                        leading: Icon(Icons.location_on),
-                        title: Text('Location'),
-                        subtitle: Text(profile.lokasi),
-                      ),
-                    ]
-                  )
-                ) 
-              ],
+                ListTile(
+                  leading: Icon(Icons.location_on),
+                  title: Text('Location'),
+                  subtitle: Text(profile.lokasi),
+                ),
+              ]
+            )
+          ) 
+        ],
       ),
     ),
   );
