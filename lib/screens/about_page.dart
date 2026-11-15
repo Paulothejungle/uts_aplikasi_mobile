@@ -55,6 +55,18 @@ class AboutPage extends StatelessWidget {
                   title: Text('Bermain Game'),
                   subtitle: Text('Hobi'),
                 ),
+
+                ListTile(
+                  leading: Icon(Icons.code),
+                  title: Text('Belajar Pemrograman'),
+                  subtitle: Text('Minat'),
+                ),
+
+                ListTile(
+                  leading: Icon(Icons.sports_tennis),
+                  title: Text('Badminton'),
+                  subtitle: Text('Hobi'),
+                ),
               ]
             )
           )
