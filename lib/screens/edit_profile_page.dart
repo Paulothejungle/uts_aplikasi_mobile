@@ -213,11 +213,18 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
               const SizedBox(height: 15),
 
-              
-            ]
-          )
-        )
-      )
+              // Tombol simpan 
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: simpanProfil,
+                  child: const Text('Simpan Perubahan'),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
