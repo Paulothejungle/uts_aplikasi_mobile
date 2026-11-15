@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "../models/profile.dart";
+import "edit_profile_page.dart";
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -10,7 +11,7 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
 
-  final Profile profile = Profile(
+  late Profile profile = Profile(
     nama  : 'Rival Hermawan',
     nim   : '1124160127',
     prodi : 'Software Engineering',
@@ -23,11 +24,48 @@ class _ProfilePageState extends State<ProfilePage> {
   );
 
   @override
+    void initState() {
+      super.initState();
+
+      profile = Profile(
+        nama  : 'Rival Hermawan',
+        nim   : '1124160127',
+        prodi : 'Software Engineering',
+        kelas : 'TI 24 SE M',
+        bio   : 'Mahasiswa Software Engineering yang tertarik dengan dunia pemrograman',
+        email : 'rivalhermawan47@gmail.com',
+        phone : '085773810843',
+        github: 'https://github.com/Paulothejungle',
+        lokasi: 'Tangerang',
+      );
+    }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profil Saya'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.edit),
+            onPressed: () async {
+              final dataBaru = await Navigator.push<Profile>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => EditProfilePage(
+                    profile: profile,
+                    ),
+                ),
+              );
+              if (dataBaru != null) {
+                setState((){
+                  profile = dataBaru;  
+                });
+              }
+            },
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(
