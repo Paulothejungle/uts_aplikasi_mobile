@@ -11,6 +11,22 @@ class AboutPage extends StatelessWidget {
         centerTitle: true,
       ),
       
+      body: ListView(
+        padding: const EdgeInsets.all(20),
+        children: [
+          const CircleAvatar(
+            radius: 55,
+            backgroundColor: Colors.lightBlueAccent,
+            child: Icon(
+              Icons.person,
+              size: 55,
+              color: Colors.white,
+            ),
+          ),
+        ],
+
+        
+      ),
     );
   }
       
