@@ -42,6 +42,11 @@ class MyInfoRow extends StatelessWidget {
                 CircleAvatar(
                   radius: 55,
                   backgroundColor: Colors.lightBlueAccent,
+                  child: Icon(
+                    Icons.person,
+                    size: 60,
+                    color: Colors.white,
+                  ),
                 )
               ],
             )
