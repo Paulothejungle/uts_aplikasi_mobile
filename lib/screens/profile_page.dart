@@ -45,32 +45,45 @@ class _ProfilePageState extends State<ProfilePage> {
         title: Text(_selectedIndex == 0 ? 'profil saya' : 'Tentang saya',),
         centerTitle: true,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.edit),
-            onPressed: () async {
-              final dataBaru = await Navigator.push<Profile>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => EditProfilePage(
-                    profile: profile,
-                    ),
-                ),
-              );
-              if (dataBaru != null) {
-                setState((){
-                  profile = dataBaru;  
-                });
-              }
-            },
-          )
+          if (_selectedIndex == 0)
+            IconButton(
+              icon: const Icon(Icons.edit),
+              onPressed: () async {
+                final dataBaru = await Navigator.push<Profile>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => EditProfilePage(
+                      profile: profile,
+                      ),
+                  ),
+                );
+                if (dataBaru != null) {
+                  setState((){
+                    profile = dataBaru;  
+                  });
+                }
+              },
+            )
         ],
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(20),
-            child: Column(
-              children: [
-                SizedBox(height: 20),
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: [
+          _buildProfileContent(),
+          const AboutPage(),
+        ],
+      )
+    );
+  }
+}
+
+Widget _buildProfileContent() {
+  return SingleChildScrollView(
+    child: Padding(
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          SizedBox(height: 20),
 
                 // Avatar profile
                 CircleAvatar(
@@ -141,9 +154,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   )
                 ) 
               ],
-            )
-        ),
-      )
-    );
-  }
+      ),
+    ),
+  );
 }
