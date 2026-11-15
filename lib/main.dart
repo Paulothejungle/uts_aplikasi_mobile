@@ -47,7 +47,9 @@ class MyInfoRow extends StatelessWidget {
                     size: 60,
                     color: Colors.white,
                   ),
-                )
+                ),
+
+                SizedBox(height: 8),
               ],
             )
         ),
