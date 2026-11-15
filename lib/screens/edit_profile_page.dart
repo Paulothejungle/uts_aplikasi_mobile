@@ -25,4 +25,19 @@ class _EditProfilePageState extends State<EditProfilePage> {
   late TextEditingController phoneController;
   late TextEditingController githubController;
   late TextEditingController lokasiController;
+
+  @override 
+  void initState() {
+    super.initState();
+
+    namaController = TextEditingController(text: widget.profile.nama);
+    nimController = TextEditingController(text: widget.profile.nim);
+    prodiController = TextEditingController(text: widget.profile.prodi);
+    kelasController = TextEditingController(text: widget.profile.kelas);
+    bioController = TextEditingController(text: widget.profile.bio);
+    emailController = TextEditingController(text: widget.profile.email);
+    phoneController = TextEditingController(text: widget.profile.phone);
+    githubController = TextEditingController(text: widget.profile.github);
+    lokasiController = TextEditingController(text: widget.profile.lokasi);
+  }
 }
