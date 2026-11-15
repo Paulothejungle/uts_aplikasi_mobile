@@ -50,6 +50,17 @@ class MyInfoRow extends StatelessWidget {
                 ),
 
                 SizedBox(height: 8),
+
+                // my full name
+                Text(
+                  'Rival Hermawan',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ), 
+                ),
+                
+                  
               ],
             )
         ),
