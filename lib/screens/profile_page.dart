@@ -117,7 +117,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 children: [
                   CircleAvatar(
                     radius: 30,
-                    child: Icon(Icons.person, size: 35),
+                    backgroundImage: AssetImage('assets/images/rival.jpeg'),
                   ),
                   SizedBox(height: 10),
                   Text(
@@ -173,11 +173,7 @@ class _ProfilePageState extends State<ProfilePage> {
           CircleAvatar(
             radius: 55,
             backgroundColor: Colors.lightBlueAccent,
-            child: Icon(
-              Icons.person,
-              size: 60,
-              color: Colors.white,
-            ),
+            backgroundImage: AssetImage('assets/images/rival.jpeg'),
           ),
 
           SizedBox(height: 8),
