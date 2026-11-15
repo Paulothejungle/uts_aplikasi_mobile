@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "../models/profile.dart";
 import "edit_profile_page.dart";
+import "about_page.dart";
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -12,6 +13,13 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
 
   late Profile profile;
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState((){
+      _selectedIndex = index;
+    });
+  }
 
   @override
     void initState() {
@@ -34,7 +42,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profil Saya'),
+        title: Text(_selectedIndex == 0 ? 'profil saya' : 'Tentang saya',),
         centerTitle: true,
         actions: [
           IconButton(
