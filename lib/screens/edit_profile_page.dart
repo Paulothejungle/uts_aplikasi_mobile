@@ -31,15 +31,15 @@ class _EditProfilePageState extends State<EditProfilePage> {
   void initState() {
     super.initState();
 
-    namaController = TextEditingController(text: widget.profile.nama);
-    nimController = TextEditingController(text: widget.profile.nim);
-    prodiController = TextEditingController(text: widget.profile.prodi);
-    kelasController = TextEditingController(text: widget.profile.kelas);
-    bioController = TextEditingController(text: widget.profile.bio);
-    emailController = TextEditingController(text: widget.profile.email);
-    phoneController = TextEditingController(text: widget.profile.phone);
-    githubController = TextEditingController(text: widget.profile.github);
-    lokasiController = TextEditingController(text: widget.profile.lokasi);
+    namaController    = TextEditingController(text: widget.profile.nama);
+    nimController     = TextEditingController(text: widget.profile.nim);
+    prodiController   = TextEditingController(text: widget.profile.prodi);
+    kelasController   = TextEditingController(text: widget.profile.kelas);
+    bioController     = TextEditingController(text: widget.profile.bio);
+    emailController   = TextEditingController(text: widget.profile.email);
+    phoneController   = TextEditingController(text: widget.profile.phone);
+    githubController  = TextEditingController(text: widget.profile.github);
+    lokasiController  = TextEditingController(text: widget.profile.lokasi);
   }
 
   @override
@@ -60,13 +60,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
   void simpanProfil() {
     if (_formKey.currentState!.validate()) {
       final dataBaru = Profile(
-        nama: namaController.text,
-        nim: nimController.text,
-        prodi: prodiController.text,
-        kelas: kelasController.text,
-        bio: bioController.text,
-        email: emailController.text,
-        phone: phoneController.text,
+        nama  : namaController.text,
+        nim   : nimController.text,
+        prodi : prodiController.text,
+        kelas : kelasController.text,
+        bio   : bioController.text,
+        email : emailController.text,
+        phone : phoneController.text,
         github: githubController.text,
         lokasi: lokasiController.text,
       );
