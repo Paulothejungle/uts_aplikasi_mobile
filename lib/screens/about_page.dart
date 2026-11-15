@@ -80,6 +80,26 @@ class AboutPage extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+
+          const SizedBox(height: 10),
+
+          Card(
+            child: Column(
+              children: const [
+                ListTile(
+                  leading: Icon(Icons.school),
+                  title: Text('SMKN 2 Kab. Tangerang'),
+                  subtitle: Text('Teknik Komputer & Jaringan'),
+                ),
+
+                ListTile(
+                  leading: Icon(Icons.school),
+                  title: Text('Global Institute'),
+                  subtitle: Text('Software Engineering'),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
