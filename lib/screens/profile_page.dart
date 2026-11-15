@@ -95,8 +95,19 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.blue
               ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  CircleAvatar(
+                    radius: 30,
+                    child: Icon(Icons.person, size: 35),
+                  ),
+                  
+                ],
+              )
             )
           ]
         )
