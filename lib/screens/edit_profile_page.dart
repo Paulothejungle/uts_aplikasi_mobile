@@ -187,7 +187,20 @@ class _EditProfilePageState extends State<EditProfilePage> {
                   }
                   return null;
                 },
-              )
+              ),
+
+              const SizedBox(height: 15),
+
+              // Github  
+              TextFormField(
+                controller: githubController,
+                decoration: const InputDecoration(
+                  labelText: 'Github',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+
+              
             ]
           )
         )
