@@ -55,4 +55,23 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
     super.dispose();
   }
+
+  void simpanProfil() {
+    if (_formKey.currentState!.validate()) {
+      final dataBaru = Profile(
+        nama: namaController.text,
+        nim: nimController.text,
+        prodi: prodiController.text,
+        kelas: kelasController.text,
+        bio: bioController.text,
+        email: emailController.text,
+        phone: phoneController.text,
+        github: githubController.text,
+        lokasi: lokasiController.text,
+      );
+
+      Navigator.pop(context, dataBaru);
+    }
+  }
+
 }
