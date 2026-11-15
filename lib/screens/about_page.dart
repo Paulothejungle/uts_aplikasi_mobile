@@ -67,9 +67,19 @@ class AboutPage extends StatelessWidget {
                   title: Text('Badminton'),
                   subtitle: Text('Hobi'),
                 ),
-              ]
-            )
-          )
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 25),
+
+          const Text(
+            'Riwayat Pendidikan',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ],
       ),
     );
