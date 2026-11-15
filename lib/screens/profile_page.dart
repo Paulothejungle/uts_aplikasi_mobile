@@ -4,7 +4,14 @@ import "edit_profile_page.dart";
 import "about_page.dart";
 
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+  final bool isDarkMode;
+  final VoidCallback onThemeChanged;
+
+  const ProfilePage({
+    super.key,
+    required this.isDarkMode,
+    required this.onThemeChanged,
+  });
 
   @override
   State<ProfilePage> createState()=> _ProfilePageState();
