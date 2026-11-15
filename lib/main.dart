@@ -29,6 +29,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Rival Hermawan',
       theme: ThemeData(
         colorSchemeSeed: Colors.blueAccent,
+        brightness: Brightness.light,
       ),
       home: const ProfilePage(),
     );
