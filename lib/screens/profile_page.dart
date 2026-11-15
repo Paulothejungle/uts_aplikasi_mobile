@@ -62,14 +62,14 @@ class _ProfilePageState extends State<ProfilePage> {
 
                 // Student identity 
                 Text('NIM: ${profile.nim}'),
-                Text('Software Engineering'),
-                Text('Kelas: TI 24 SE M'),
+                Text(profile.prodi),
+                Text('Kelas: ${profile.kelas}'),
 
                 SizedBox(height: 12),
 
                 // Bio
                 Text(
-                  'Mahasiswa Software Engineering yang tertarik dengan dunia pemrograman',
+                  profile.bio,
                   textAlign: TextAlign.center,
                 ),
 
@@ -81,25 +81,25 @@ class _ProfilePageState extends State<ProfilePage> {
                       ListTile(
                         leading: Icon(Icons.email),
                         title: Text('Email'),
-                        subtitle: Text('rivalhermawan47@gmail.com'),
+                        subtitle: Text(profile.email),
                       ),
 
                       ListTile(
                         leading: Icon(Icons.phone),
                         title: Text('Phone'),
-                        subtitle: Text('085773810843'),
+                        subtitle: Text(profile.phone),
                       ),
 
                       ListTile(
                         leading: Icon(Icons.code),
                         title: Text('Github'),
-                        subtitle: Text('https://github.com/Paulothejungle'),
+                        subtitle: Text(profile.github),
                       ),
 
                       ListTile(
                         leading: Icon(Icons.location_on),
-                        title: Text('Locatioon'),
-                        subtitle: Text('Tangerang'),
+                        title: Text('Location'),
+                        subtitle: Text(profile.lokasi),
                       ),
                     ]
                   )
