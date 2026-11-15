@@ -73,7 +73,13 @@ class MyInfoRow extends StatelessWidget {
                 Text(
                   'Mahasiswa Software Engineering yang tertarik dengan dunia pemrograman',
                   textAlign: TextAlign.center,
-                ), 
+                ),
+
+                SizedBox(height: 20),
+
+                Card(
+                  
+                ) 
               ],
             )
         ),
