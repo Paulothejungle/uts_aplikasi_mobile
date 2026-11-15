@@ -31,7 +31,18 @@ class _MyAppState extends State<MyApp> {
         colorSchemeSeed: Colors.blueAccent,
         brightness: Brightness.light,
       ),
-      home: const ProfilePage(),
+
+      darkTheme: ThemeData(
+        colorSchemeSeed: Colors.blueAccent,
+        brightness: Brightness.dark,
+      ),
+
+      themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
+
+      home: const ProfilePage(
+        isDarkMode: isDarkMode,
+        onThemeChanged: toggleTheme,
+      ),
     );
   }
 }
