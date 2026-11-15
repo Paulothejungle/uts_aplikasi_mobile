@@ -31,9 +31,9 @@ class MyInfoRow extends StatelessWidget {
         title: const Text('Profil Saya'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text('Halaman Profil Mahasiswa'),
-      ),
+      body: const SingleChildScrollView(
+        
+      )
     );
   }
 }
