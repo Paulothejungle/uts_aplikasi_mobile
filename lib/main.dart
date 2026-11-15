@@ -41,6 +41,7 @@ class MyInfoRow extends StatelessWidget {
                 // Avatar profile
                 CircleAvatar(
                   radius: 55,
+                  backgroundColor: Colors.lightBlueAccent,
                 )
               ],
             )
