@@ -82,7 +82,17 @@ class _EditProfilePageState extends State<EditProfilePage> {
         centerTitle: true,
       ),
 
-      
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            children:[
+              
+            ]
+          )
+        )
+      )
     );
   }
 
