@@ -99,8 +99,20 @@ class _EditProfilePageState extends State<EditProfilePage> {
                     return 'Nama Wajib Diisi';
                   }
                   return null;
-                }
-              )
+                },
+              ),
+
+              const SizedBox(height: 15),
+
+              TextFormField(
+                controller: nimController,
+                decoration: const InputDecoration(
+                  labelText: 'NIM',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+
+              
             ]
           )
         )
