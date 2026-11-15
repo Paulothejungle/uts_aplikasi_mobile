@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:flutter/services.dart";
 import "../models/profile.dart";
 
 class EditProfilePage extends StatefulWidget {
@@ -170,6 +171,23 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
               const SizedBox(height: 15),
               
+              // Phone
+              TextFormField(
+                controller: phoneController,
+                keyboardType: TextInputType.phone,
+                decoration: const InputDecoration(
+                  labelText: 'Nomor HP',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value) {
+                  if (value == null ||
+                      !RegExp(r'^[0-9]{10,13}$')
+                          .hasMatch(value.trim())) {
+                    return 'Nomor HP harus 10-13 digit angka';
+                  }
+                  return null;
+                },
+              )
             ]
           )
         )
