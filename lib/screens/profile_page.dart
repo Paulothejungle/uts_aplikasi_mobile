@@ -121,7 +121,16 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Profil'),
+              onTap: () {
+                setState((){
+                  _selectedIndex = 0;
+                });
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),
