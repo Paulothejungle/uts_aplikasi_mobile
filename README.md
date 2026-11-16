@@ -58,7 +58,7 @@ Menampilkan menu navigasi samping yang berisi informasi pengguna dan pilihan hal
 
 Video demonstrasi aplikasi dapat dilihat melalui YouTube pada tautan berikut:
 
-**[Tonton Video Demonstrasi Profile App](https://youtu.be/XJzWRLVZGWM?si=3RCIWjSyORIRiM3n)**
+**[Tonton Video Demonstrasi Profile App](https://youtu.be/dpjzTYwhG08?si=OEdIZfYaL1EPJWJz)**
 
 Video mencakup:
 - Penjelasan fitur aplikasi.
