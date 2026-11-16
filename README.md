@@ -58,7 +58,7 @@ Menampilkan menu navigasi samping yang berisi informasi pengguna dan pilihan hal
 
 Video demonstrasi aplikasi dapat dilihat melalui YouTube pada tautan berikut:
 
-**[Tonton Video Demonstrasi Profile App](MASUKKAN_LINK_YOUTUBE_DI_SINI)**
+**[Tonton Video Demonstrasi Profile App](https://youtu.be/XJzWRLVZGWM?si=3RCIWjSyORIRiM3n)**
 
 Video mencakup:
 - Penjelasan fitur aplikasi.
@@ -80,7 +80,7 @@ Pastikan perangkat sudah memiliki:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
+git clone https://github.com/Paulothejungle/uts_aplikasi_mobile
 ```
 
 ### 2. Masuk ke Folder Project
